@@ -16,6 +16,7 @@
 		555C133A2620B4B00051C2A8 /* LangaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13392620B4B00051C2A8 /* LangaugeView.swift */; };
 		555C13412620B8C70051C2A8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13402620B8C70051C2A8 /* SplashView.swift */; };
 		555C13442620BB2E0051C2A8 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13432620BB2E0051C2A8 /* AppView.swift */; };
+		555C134B2620F6DB0051C2A8 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C134A2620F6DB0051C2A8 /* AppButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		555C13392620B4B00051C2A8 /* LangaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangaugeView.swift; sourceTree = "<group>"; };
 		555C13402620B8C70051C2A8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		555C13432620BB2E0051C2A8 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		555C134A2620F6DB0051C2A8 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +67,10 @@
 			children = (
 				555C13172620AF050051C2A8 /* ExampleApp.swift */,
 				555C133D2620B8780051C2A8 /* Views */,
-				555C131B2620AF080051C2A8 /* Assets.xcassets */,
+				555C13472620F6A00051C2A8 /* Assets */,
+				555C13492620F6CC0051C2A8 /* Styles */,
+				555C13482620F6B10051C2A8 /* SupportFiles */,
 				555C13202620AF080051C2A8 /* Info.plist */,
-				555C131D2620AF080051C2A8 /* Preview Content */,
-				555C13312620B2600051C2A8 /* Localizable.strings */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -90,6 +92,31 @@
 				555C13392620B4B00051C2A8 /* LangaugeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		555C13472620F6A00051C2A8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				555C13312620B2600051C2A8 /* Localizable.strings */,
+				555C131B2620AF080051C2A8 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		555C13482620F6B10051C2A8 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				555C131D2620AF080051C2A8 /* Preview Content */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		555C13492620F6CC0051C2A8 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				555C134A2620F6DB0051C2A8 /* AppButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +199,7 @@
 				555C131A2620AF050051C2A8 /* MainView.swift in Sources */,
 				555C13412620B8C70051C2A8 /* SplashView.swift in Sources */,
 				555C133A2620B4B00051C2A8 /* LangaugeView.swift in Sources */,
+				555C134B2620F6DB0051C2A8 /* AppButtonStyle.swift in Sources */,
 				555C13442620BB2E0051C2A8 /* AppView.swift in Sources */,
 				555C13182620AF050051C2A8 /* ExampleApp.swift in Sources */,
 			);
@@ -314,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Example/SupportFiles/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -335,7 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Example/SupportFiles/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

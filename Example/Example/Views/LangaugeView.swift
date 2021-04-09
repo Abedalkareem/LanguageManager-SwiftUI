@@ -19,19 +19,20 @@ struct LangaugeView: View {
   var body: some View {
     VStack {
       Text("Select a language")
+        .fontWeight(.bold)
         .padding()
       Button("Arabic") {
         withAnimation {
           languageSettings.selectedLanguage = .ar
         }
       }
-      .padding()
       Button("English") {
         withAnimation {
           languageSettings.selectedLanguage = .en
         }
       }
     }
+    .buttonStyle(AppButtonStyle())
   }
 }
 

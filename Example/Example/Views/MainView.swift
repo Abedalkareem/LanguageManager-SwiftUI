@@ -20,8 +20,9 @@ struct MainView: View {
       Image("logo")
         .resizable()
         .aspectRatio(contentMode: .fit)
-        .frame(width: 150, height: 100)
+        .frame(width: 240, height: 100)
       Text("Hello")
+        .fontWeight(.bold)
         .padding()
       Text("About")
         .padding()
@@ -29,6 +30,7 @@ struct MainView: View {
         isPresented = true
       }
     }
+    .buttonStyle(AppButtonStyle())
     .fullScreenCover(isPresented: $isPresented) {
       LangaugeView()
     }

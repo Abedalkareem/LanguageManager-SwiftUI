@@ -17,9 +17,10 @@ struct SplashView: View {
       Image("logo")
         .resizable()
         .aspectRatio(contentMode: .fit)
-        .frame(width: 150, height: 100)
+        .frame(width: 240, height: 100)
       Spacer()
       Text("Welcome!")
+        .fontWeight(.bold)
       Spacer()
     }
   }
