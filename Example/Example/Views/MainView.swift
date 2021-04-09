@@ -17,6 +17,10 @@ struct MainView: View {
   
   var body: some View {
     VStack {
+      Image("logo")
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 150, height: 100)
       Text("Hello")
         .padding()
       Text("About")
