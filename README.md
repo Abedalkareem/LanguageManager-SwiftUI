@@ -10,7 +10,7 @@ A Language manager to handle changing app language without restarting the app.
 
 ## ScreenShots
 
-<img src="https://raw.githubusercontent.com/Abedalkareem/LanguageManager-SwiftUI/main/Images/lagnaugemanager.gif"  width="450">
+<img src="https://raw.githubusercontent.com/Abedalkareem/LanguageManager-SwiftUI/main/Images/languagemanager.gif"  width="450">
 
 ## Usage
 
