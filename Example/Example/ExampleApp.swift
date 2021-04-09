@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import LanguageManagerSwiftUI
 
 @main
 struct ExampleApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      LanguageManagerView {
+        ContentView()
+      }
     }
+  }
 }

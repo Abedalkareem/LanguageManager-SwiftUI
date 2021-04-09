@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		555C131A2620AF050051C2A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13192620AF050051C2A8 /* ContentView.swift */; };
 		555C131C2620AF080051C2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555C131B2620AF080051C2A8 /* Assets.xcassets */; };
 		555C131F2620AF080051C2A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555C131E2620AF080051C2A8 /* Preview Assets.xcassets */; };
+		555C13292620B09C0051C2A8 /* LanguageManagerSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 555C13282620B09C0051C2A8 /* LanguageManagerSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555C13292620B09C0051C2A8 /* LanguageManagerSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				555C13282620B09C0051C2A8 /* LanguageManagerSwiftUI */,
+			);
 			productName = Example;
 			productReference = 555C13142620AF050051C2A8 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 555C130B2620AF050051C2A8;
+			packageReferences = (
+				555C13272620B09C0051C2A8 /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */,
+			);
 			productRefGroup = 555C13152620AF050051C2A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		555C13272620B09C0051C2A8 /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Abedalkareem/LanguageManager-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		555C13282620B09C0051C2A8 /* LanguageManagerSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 555C13272620B09C0051C2A8 /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */;
+			productName = LanguageManagerSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 555C130C2620AF050051C2A8 /* Project object */;
 }

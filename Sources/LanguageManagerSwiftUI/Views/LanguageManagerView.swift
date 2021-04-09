@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct LanguageManagerView<Content: View>: View {
+public struct LanguageManagerView<Content: View>: View {
   
   // MARK: Private properties
   
   private let content: Content
-  @ObservedObject var settings: LanguageSettings
+  @ObservedObject private var settings: LanguageSettings
   
   // MARK: init
   
-  init(_ defaultLanguage: Languages, content: () -> Content) {
+  public init(_ defaultLanguage: Languages, content: () -> Content) {
     self.content = content()
     self.settings = LanguageSettings(defaultLanguage: defaultLanguage)
   }
