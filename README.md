@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/Abedalkareem/LanguageManager-SwiftUI/main/Images/logo.png"  width="150">  </center>
+<img src="https://raw.githubusercontent.com/Abedalkareem/LanguageManager-SwiftUI/main/Images/logo.png"  width="350">  </center>
 </p>
 <br>
 
@@ -10,12 +10,12 @@ A Language manager to handle changing app language without restarting the app.
 
 ## ScreenShots
 
-<img src="https://raw.githubusercontent.com/Abedalkareem/LanguageManager-SwiftUI/main/Images/languagemanager.gif"  width="450">
+<img src="https://raw.githubusercontent.com/Abedalkareem/LanguageManager-SwiftUI/main/Images/languagemanager.gif"  width="350">
 
 ## Usage
 
 First of all, remember to add the ```Localizable.strings``` to your project, after adding the ```Localizable.strings``` file, select it then go to file inspector and below localization press localize, after that go to ```PROJECT > Localisation```  then add the languages you want to support (Arabic for example), dialog will appear to ask you which resource file you want to localize, select just the ```Localizable.strings``` file. <br>  <br>
-Now, go to your storyboard and add ```UILable``` and add text to it, for example ```"Hello !"```, then go to your ```Localizable.strings``` file expand it, you will find Localizable strings file for English and Arabic, for English put just this line with the string you put in the ```UILabel``` inside the storyboard   <br>
+Now, add a ```Text``` view and then add a text to it, for example ```"Hello !"```, then go to your ```Localizable.strings``` file expand it, you will find Localizable strings file for English and Arabic, for English enter this line with the string you used in the ```Text``` view that we just mentioned before   <br>
 ```"Hello !" = "Hello !";```  <br>
 and for Arabic file :  <br>
 ```"Hello !" = "مرحبا !";```  <br>
