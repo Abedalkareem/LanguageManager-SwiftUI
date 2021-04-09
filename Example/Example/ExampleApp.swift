@@ -12,8 +12,11 @@ import LanguageManagerSwiftUI
 struct ExampleApp: App {
   var body: some Scene {
     WindowGroup {
-      LanguageManagerView {
-        ContentView()
+      // The default language when the app starts for the first time.
+      // it can be the `deviceLanguage`, `ar`, `en`, or any language.
+      LanguageManagerView(.deviceLanguage) {
+        AppView()
+          .transition(.slide) // The animation that will be happening when the language change.
       }
     }
   }

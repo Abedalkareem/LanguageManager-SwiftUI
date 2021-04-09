@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Example
+
+  Created by abedalkareem omreyh on 09/04/2021.
+  
+*/
+
+"Hello" = "Hello!";
+"About" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.";
+"Change the language" = "Change the language";
+"Arabic" = "Arabic";
+"English" = "English";
+"Welcome!" = "Welcome!";

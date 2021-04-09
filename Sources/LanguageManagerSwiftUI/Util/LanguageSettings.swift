@@ -32,7 +32,7 @@ public class LanguageSettings: ObservableObject {
 
   /// The diriction of the language.
   public var layout: LayoutDirection {
-    isRightToLeft ? .leftToRight : .rightToLeft
+    isRightToLeft ? .rightToLeft : .leftToRight
   }
   
   /// The diriction of the language as boolean.
@@ -49,7 +49,7 @@ public class LanguageSettings: ObservableObject {
     }
   }
   
-  // MARK: State properties
+  // MARK: - State properties
   
   ///
   /// The current app selected language.

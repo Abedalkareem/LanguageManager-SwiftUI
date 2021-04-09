@@ -8,19 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		555C13182620AF050051C2A8 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13172620AF050051C2A8 /* ExampleApp.swift */; };
-		555C131A2620AF050051C2A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13192620AF050051C2A8 /* ContentView.swift */; };
+		555C131A2620AF050051C2A8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13192620AF050051C2A8 /* MainView.swift */; };
 		555C131C2620AF080051C2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555C131B2620AF080051C2A8 /* Assets.xcassets */; };
 		555C131F2620AF080051C2A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555C131E2620AF080051C2A8 /* Preview Assets.xcassets */; };
 		555C13292620B09C0051C2A8 /* LanguageManagerSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 555C13282620B09C0051C2A8 /* LanguageManagerSwiftUI */; };
+		555C132F2620B2600051C2A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 555C13312620B2600051C2A8 /* Localizable.strings */; };
+		555C133A2620B4B00051C2A8 /* LangaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13392620B4B00051C2A8 /* LangaugeView.swift */; };
+		555C13412620B8C70051C2A8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13402620B8C70051C2A8 /* SplashView.swift */; };
+		555C13442620BB2E0051C2A8 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C13432620BB2E0051C2A8 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		555C13142620AF050051C2A8 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555C13172620AF050051C2A8 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
-		555C13192620AF050051C2A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		555C13192620AF050051C2A8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		555C131B2620AF080051C2A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		555C131E2620AF080051C2A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		555C13202620AF080051C2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555C13302620B2600051C2A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		555C13332620B2630051C2A8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		555C13392620B4B00051C2A8 /* LangaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangaugeView.swift; sourceTree = "<group>"; };
+		555C13402620B8C70051C2A8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		555C13432620BB2E0051C2A8 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				555C13172620AF050051C2A8 /* ExampleApp.swift */,
-				555C13192620AF050051C2A8 /* ContentView.swift */,
+				555C133D2620B8780051C2A8 /* Views */,
 				555C131B2620AF080051C2A8 /* Assets.xcassets */,
 				555C13202620AF080051C2A8 /* Info.plist */,
 				555C131D2620AF080051C2A8 /* Preview Content */,
+				555C13312620B2600051C2A8 /* Localizable.strings */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -69,6 +79,17 @@
 				555C131E2620AF080051C2A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		555C133D2620B8780051C2A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				555C13432620BB2E0051C2A8 /* AppView.swift */,
+				555C13402620B8C70051C2A8 /* SplashView.swift */,
+				555C13192620AF050051C2A8 /* MainView.swift */,
+				555C13392620B4B00051C2A8 /* LangaugeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +136,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 555C130B2620AF050051C2A8;
 			packageReferences = (
@@ -135,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				555C131F2620AF080051C2A8 /* Preview Assets.xcassets in Resources */,
+				555C132F2620B2600051C2A8 /* Localizable.strings in Resources */,
 				555C131C2620AF080051C2A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,12 +169,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555C131A2620AF050051C2A8 /* ContentView.swift in Sources */,
+				555C131A2620AF050051C2A8 /* MainView.swift in Sources */,
+				555C13412620B8C70051C2A8 /* SplashView.swift in Sources */,
+				555C133A2620B4B00051C2A8 /* LangaugeView.swift in Sources */,
+				555C13442620BB2E0051C2A8 /* AppView.swift in Sources */,
 				555C13182620AF050051C2A8 /* ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		555C13312620B2600051C2A8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				555C13302620B2600051C2A8 /* en */,
+				555C13332620B2630051C2A8 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		555C13212620AF080051C2A8 /* Debug */ = {
