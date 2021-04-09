@@ -23,7 +23,7 @@ public struct LanguageManagerView<Content: View>: View {
   
   // MARK: body
 
-  var body: some View {
+  public var body: some View {
     content
       .environment(\.locale, settings.local)
       .environment(\.layoutDirection, settings.layout)
