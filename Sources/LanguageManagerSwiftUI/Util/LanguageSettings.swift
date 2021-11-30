@@ -11,15 +11,19 @@ import SwiftUI
 public class LanguageSettings: ObservableObject {
   
   // MARK: - Properties
-  
+
+  ///
+  /// Current app local. It's passed to the views as `environment` so they can use it to localise strings.
+  /// Also, you can use it to localise the currency or to use it with a `NSDateFormatter`.
+  ///
   public var local: Locale {
     Locale(identifier: selectedLanguage.rawValue)
   }
   
   ///
   /// The device preferred language.
-  /// The device language is deffrent than the app language,
-  /// to get the app language use `selectedLanguage`.
+  /// The device language is deffrent than the app language, it's the language the user is using for his device.
+  /// To get the app language use `selectedLanguage`.
   ///
   public var deviceLanguage: Languages? {
     get {
@@ -30,19 +34,25 @@ public class LanguageSettings: ObservableObject {
     }
   }
 
-  /// The diriction of the language.
+  ///
+  /// The direction of the language. You can expect one of these values, `rightToLeft` or `leftToRight`.
+  ///
   public var layout: LayoutDirection {
     isRightToLeft ? .rightToLeft : .leftToRight
   }
-  
+
+  ///
   /// The diriction of the language as boolean.
+  ///
   public var isRightToLeft: Bool {
     get {
       return isLanguageRightToLeft(language: selectedLanguage)
     }
   }
-  
+
+  ///
   /// A unique id used to refresh the view.
+  ///
   var uuid: String {
     get {
       return UUID().uuidString
@@ -53,6 +63,8 @@ public class LanguageSettings: ObservableObject {
   
   ///
   /// The current app selected language.
+  /// Changing this value will refresh your views with the new selected language.
+  /// The default language is the device language, so if the user device language is arabic, the app language will be arabic.
   ///
   @Published public var selectedLanguage: Languages = .deviceLanguage
   
