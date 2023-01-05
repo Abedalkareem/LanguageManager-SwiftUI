@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct AppView: View {
-  
+
   // MARK: - State properties
 
   @State var showMainScreen = false
-  
+
   // MARK: - body
 
   var body: some View {
@@ -25,7 +25,7 @@ struct AppView: View {
     }
     .onAppear(perform: onAppear)
   }
-  
+
   // MARK: -
 
   private func onAppear() {

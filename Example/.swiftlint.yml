@@ -1,0 +1,12 @@
+disabled_rules:
+
+included:
+  - ../
+
+excluded:
+  - Carthage
+  - Pods
+  - Modules
+
+identifier_name:
+  min_length: 2

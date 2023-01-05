@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SplashView: View {
-  
+
   // MARK: - body
-  
+
   var body: some View {
     VStack {
       Spacer()

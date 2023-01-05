@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct MainView: View {
-  
+
   // MARK: - State properties
-  
+
   @State private var isPresented = false
-  
+
   // MARK: - body
-  
+
   var body: some View {
     VStack {
       Image("logo")

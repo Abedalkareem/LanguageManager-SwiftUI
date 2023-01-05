@@ -11,12 +11,12 @@ import Foundation
 struct AppUserDefault<T> {
   let key: String
   let defaultValue: T
-  
+
   init(_ key: DefaultsKeys, defaultValue: T) {
     self.key = key.rawValue
     self.defaultValue = defaultValue
   }
-  
+
   var wrappedValue: T {
     get {
       return UserDefaults.standard.object(forKey: key) as? T ?? defaultValue

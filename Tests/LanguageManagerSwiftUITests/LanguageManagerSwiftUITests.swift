@@ -3,10 +3,10 @@ import XCTest
 
 final class LanguageManagerSwiftUITests: XCTestCase {
   func testExample() {
-    
+
   }
-  
+
   static var allTests = [
-    ("testExample", testExample),
+    ("testExample", testExample)
   ]
 }

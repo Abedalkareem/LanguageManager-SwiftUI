@@ -9,13 +9,13 @@ import SwiftUI
 import LanguageManagerSwiftUI
 
 struct LangaugeView: View {
-  
+
   // MARK: - Properties
-  
+
   @EnvironmentObject var languageSettings: LanguageSettings
-  
+
   // MARK: - body
-  
+
   var body: some View {
     VStack {
       Text("Select a language")
