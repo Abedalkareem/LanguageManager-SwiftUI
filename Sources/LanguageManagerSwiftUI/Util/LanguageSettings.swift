@@ -77,7 +77,7 @@ public class LanguageSettings: ObservableObject {
       _language = (defaultLanguage == .deviceLanguage ? deviceLanguage : defaultLanguage).map { $0.rawValue }
     }
 
-    selectedLanguage = Languages(rawValue: _language!)!
+    selectedLanguage = Languages(rawValue: _language!)
 
     observeForSelectedLanguage()
   }
